@@ -1,6 +1,11 @@
 import requests
 import datetime as dt
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+API_KEY = os.getenv('API_KEY')
+API_ID = os.getenv('API_ID')
 
 #post data to nutritionix Api
 API_KEY = 'b7fd2c8630ec91319955073b919885c5	'
